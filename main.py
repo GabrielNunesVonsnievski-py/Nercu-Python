@@ -62,7 +62,10 @@ def listar_chamados(chamados):
     filtros = {"1": None, "2": "Aberto", "3": "Em andamento", "4": "Encerrado"}
     status_filtro = filtros.get(filtro, None)
 
-    lista = chamados if not status_filtro else [c for c in chamados if c["status"] == status_filtro]
+    if not status_filtro:
+        lista = chamados
+    else:
+        lista = [c for c in chamados if c["status"] == status_filtro]
 
     if not lista:
         print("Nenhum chamado encontrado.")

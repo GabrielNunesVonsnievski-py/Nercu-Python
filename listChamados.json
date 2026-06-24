@@ -4,7 +4,15 @@
         "titulo": "teste de primeiro chamado",
         "categoria": "Software",
         "prioridade": "Baixa",
-        "status": "Aberto",
+        "status": "Em andamento",
         "responsavel": "Gabriel Nunes Vonsnievski"
+    },
+    {
+        "id": 2,
+        "titulo": "teste de titulo",
+        "categoria": "Outro",
+        "prioridade": "Média",
+        "status": "Encerrado",
+        "responsavel": "Rafael"
     }
 ]
